@@ -1,0 +1,44 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(93, 171, 216);
+}
+form{
+    margin: auto;
+    width: 60%;
+    background-color: rgb(207, 207, 207);
+    color: rgb(56, 56, 56);
+    box-shadow: 10px 10px;
+    text-align: center;
+
+    
+}
+input[type=text], [type=email], [type=date], [type=number]{
+    width: 70%;
+    background-color: rgb(235, 235, 235);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 8px 0;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid rgb(139, 139, 139);
+}
+input[type=submit] {
+    width: 70%;
+    background-color: rgb(68, 180, 231);
+    color: white;
+    padding: 14px 20px;
+    margin: 0 0 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input:invalid {
+    border: 1px solid red;
+}
+input:valid {
+    border: 1px solid green;
+}
+input[type=submit]:hover {
+    
+    background-color: rgb(49, 137, 175);
+}

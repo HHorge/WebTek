@@ -1,0 +1,5 @@
+1. What's the difference between "position: absolute" and "position: fixed"?
+"Position: absolute" positions the element relative to a parent element. Fixed makes the element static, satying still even if the user scrolls the page.
+
+2. With CSS3, how do we access the this element within another element?
+Using the nth-child selector. For example, if you want to select the third paragraph you'd write p:nth-child(3){}

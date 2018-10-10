@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tax form</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post" id="heroform">
+            <br>
+            <p>
+            <label for="name"><b>Full name:</b></label><br> 
+            <input type="text" name="name" pattern="[a-zA-Z ]+" title="Only letters" required>
+            </p>
+            <p>
+                <label for="gender"><b>Gender:</b></label> <input type="radio" name="gender" value="male" checked="checked"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other<br><br>
+            </p>
+            <p>
+                <label for="email"><b>Email:</b></label><br> 
+                <input type="email" name="email" (?=.*[@]) title="Email must contain @" required>
+            </p>
+            <p>
+                <label for="birthdate"><b>Birthdate:</b></label><br> 
+                <input type="date" name="birthdate" min="0000-01-01" max="1987-12-31" required>
+            </p>
+            <p>
+                <label for="heroname"><b>Hero name:</b></label><br> 
+                <input type="text" id="heroname" name="heroname" pattern="[a-zA-Z ]+" title="Only letters" required>
+            </p>
+            <p>
+                <label for="spandex"><b>Do you wear spandex?</b></label><br> 
+                <input type="radio" name="spandex" value="True" checked="checked"> Yes
+                <input type="radio" name="spandex" value="False"> No 
+            </p>
+            <p>
+                <label for="strength"><b>Strength (1-10):</b></label><br>  
+                <input type="number" name="strength" min="1" max="10" required>
+            </p>
+            <p>
+                <label for="speed"><b>Speed (1-10):</b></label><br> 
+                <input type="number" name="speed" min="1" max="10" required>
+            </p>
+            <p>
+                <label for="intelligence"><b>Intelligence (1-10):</b></label><br>
+                <input type="number" name="intelligence" min="1" max="10" required>
+            </p>
+            <p>
+                <label for="income"><b>Income:</b></label><br>
+                <input onchange="taxCalc()" type="number" id="income" name="income" min="0" value="100" required>
+            </p>
+            <p>
+                <label for="wealth"><b>Wealth:</b></label><br>
+                <input onchange="taxCalc()" type="number" id="wealth" name="wealth" min="0" value="100" required>
+            </p>
+            <p>
+                <label for="tax"><b>Tax:</b></label><br>
+                <input type="number" id="tax" name="tax" disabled>
+            </p>
+            
+            
+            <br> <input type="submit" value="Submit">
+        </form>
+        
+        
+        <script src="script.js"></script>
+    </body>
+</html>

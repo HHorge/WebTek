@@ -1,0 +1,13 @@
+﻿1. Why do mobile phones usually ignore auto play on video elements?
+        
+Mobile data usage is a concern, and most user would like if their data didn't get used on site load. 
+
+
+2. What will the CSS snippet at the end of this section do if the visitor is browsing on a device with 320 x 568 resolution?
+
+
+Nothing. This because for the conditions calls for the width of the device to be between 768px and 1024px. The width of the this device is 320px. Even in landscape mode 568px is still less than 768px.
+        
+3. Mention some of the advantages of having a single responsive website instead of dedicated versions like m.til.no for mobile and til.no for desktop?
+        
+Not needing to redirect the users if they access the unoptimized version for their device. They still look good for devices that don't follow the standards, think tablets, phablets, large TVs etc.

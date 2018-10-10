@@ -1,0 +1,45 @@
+
+body{
+  background-color: lightgray;
+  color: rgb(65, 65, 65);
+}
+
+article {
+    font-family: "Georgia", Times, serif;
+    line-height: 150%;
+    font-size: 20px;
+    width: 30em;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+
+h2 {
+    font-size: 1.8em;
+}
+
+img{
+  max-width: 30em;
+}
+
+p, blockquote, ul, ol {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+#facts {
+    margin: 1em 0em 1em 1em;
+    width: 50%;
+    border: 1px dashed;
+    float: right;
+}
+
+#facts > ul {
+    list-style-image: url('../img/cup-icon.svg');
+    line-height: 1.5em;
+    padding-left: 1.5em;
+}
